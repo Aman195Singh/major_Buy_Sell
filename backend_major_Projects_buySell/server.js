@@ -8,7 +8,7 @@ const connectDB = require("./DB/db")
 const authRoutes =require("./Routes/auth.route")
 const productRoutes =require("./Routes/product.route")
 app.use(express.json());
-app.use(express.cors());
+app.use(cors());
 
 app.use("/api/auth",authRoutes);
 // app.use("/api/products",productRoutes);
